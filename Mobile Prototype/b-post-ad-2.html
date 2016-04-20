@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Property Post ad</title>
+      <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1'/>
+      <meta name="HandheldFriendly" content="True" />
+      <meta name="MobileOptimized" content="320" />
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta http-equiv="cleartype" content="on" />
+      <link rel="stylesheet" href="css/app.css">
+   </head>
+   <body>
+      <div class="max-center">
+         <div class="popup">
+            <div class="popup-inner">
+               <div class="container">
+                  <h4>Enter 6-digit code</h4>
+                  <p>We send an SMS to</p>
+                  <p>+91 9894614279<a href="#" class="change-num"><span class="sul-edit"></span> Edit Number</a></p>
+                  <p>Enter the code in that message</p>
+                  <form>
+                     <div class="otp-input">
+                        <input maxlength="6" class="inputMaterial" type="number" placeholder="XXX-XXX" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <a href="#" class="btn-link">Resend OTP</a>
+                     </div>
+                     <a href="#" class="btn" data-popup="close">Verify</a>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="popup hide">
+            <div class="popup-inner">
+               <div class="container change">
+                  <h4>Change Number</h4>
+                  <!-- <p>We sent an SMS to +91 9894614279.</p> -->
+                  <!-- <p>Enter the code in that message</p> -->
+                  <form>
+                     <div class="otp-input">
+                        <input maxlength="10" class="inputMaterial modify" type="number" placeholder="+91 98946 14279" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <!-- <a href="#" class="btn-link">Resend OTP</a> -->
+                     </div>
+                     <!-- <a href="#" class="change-num">Change Number</a> -->
+                     <a href="#" class="btn" data-popup="close">Update and Resend OTP</a>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="popup hide">
+            <div class="popup-inner one">
+               <div class="container">
+                  <h4>You are a registered user</h4>
+                  <p>Please enter your login password</p>
+                  <form>
+                     <div class="otp-input">
+                        <input maxlength="12" class="inputMaterial" type="text" placeholder="Password" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <a href="#" class="btn-link">Forgot password</a>
+                     </div>
+                     <p class="or">OR</p>
+                     <p>Enter OTP sent to</p>
+                     <p>+91 9894614279 <a href="#" class="change-num"><span class="sul-edit"></span> Edit Number</a></p>
+                     <!-- <p>your mobile number</p> -->
+                     <div class="otp-input">
+                        <input maxlength="6" class="inputMaterial" type="text" placeholder="XXX-XXX" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <a href="#" class="btn-link">Resend OTP</a>
+                     </div>
+                     <a href="#" class="btn" data-popup="close">Proceed</a>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <header role="banner">
+            <a href="b-post-ad.html"><i class="sul-chev-l"></i></a>
+            <a href="#"><span class="sul-list"></span></a>
+            <h1>Post an ad</h1>
+            <div class="right profile">
+               <span class="avatar">
+               <a href="#"><img src="images/profile-img.png" alt=""></a>
+               </span>
+               <div class="completion">
+                  <p>Ad completion score</p>
+                  <span>7%</span>
+               </div>
+            </div>
+            <!-- <div class="m-menu">
+               <ul>
+               	<li><a href="#">Menu1</a></li>
+               	<li><a href="#">Menu2</a></li>
+               	<li><a href="#">Menu3</a></li>
+               	<li><a href="#">Menu4</a></li>
+               	<li><a href="#">Menu5</a></li>
+               	<li><a href="#">Menu6</a></li>
+               	<li><a href="#">Menu7</a></li>
+               </ul>
+               </div> -->
+         </header>
+         <div data-click="single" class="scroll-line">
+            <ul class="two">
+               <li><a href="b-post-ad.html">1</a></li>
+               <li class="select"><a href="b-post-ad-2.html">2</a></li>
+            </ul>
+         </div>
+         <main role="main" class="main-postad">
+            <h2 style="margin-bottom:10px;">Few more clicks &amp; your property is <span>LIVE</span></h2>
+            <form action="" method="post" class="post-form">
+               <h4>Property Location <span class="required">*</span></h4>
+               <div class="form-group">
+                  <input id="pac-input" class="controls" type="text" placeholder="Enter Street/Locality/Society Name" style="padding-left:5px;">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <i class="sul-search"></i>
+                  <!--<label class="animate">Society Name/Street Name/ Locality</label>-->
+               </div>
+               <div class="gmap">
+                  <div id="map" style="width:100%; height:400px;"></div>
+               </div>
+               <div class="form-group">      
+                  <input class="inputMaterial" type="text" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label class="animate">Landmark</label>
+               </div>
+               <div class="form-group">      
+                  <input class="inputMaterial" type="text" id="txtlocality"  required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label class="animate">Locality <span class="required">*</span></label>
+               </div>
+               <div class="form-group">      
+                  <input class="inputMaterial" type="text" id="txtcity" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label class="animate">City <span class="required">*</span></label>
+               </div>
+               <h4>Property Info </h4>
+               <div class="form-group">
+                  <div class="split-wrap">
+                     <div class="form-group">      
+                        <input class="inputMaterial" type="number" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="animate">Super Built-up Area <span class="required">*</span></label>
+                     </div>
+                     <div class="form-group last">
+                        <select class="browser-default">
+                           <option value="1" selected>Sq ft</option>
+                           <option value="2">Sq Yards</option>
+                           <option value="3">Acres</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="secondary-area">
+                     <div class="split-wrap">
+                        <div class="form-group">      
+                           <input class="inputMaterial" type="number" required>
+                           <span class="highlight"></span>
+                           <span class="bar"></span>
+                           <label class="animate">Built-up Area</label>
+                        </div>
+                        <div class="form-group last">
+                           <select class="browser-default">
+                              <option value="1" selected>Sq ft</option>
+                              <option value="2">Sq Yards</option>
+                              <option value="3">Acres</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="split-wrap">
+                        <div class="form-group">      
+                           <input class="inputMaterial" type="number" required>
+                           <span class="highlight"></span>
+                           <span class="bar"></span>
+                           <label class="animate">Carpet Area</label>
+                        </div>
+                        <div class="form-group last">
+                           <select class="browser-default">
+                              <option value="1" selected>Sq ft</option>
+                              <option value="2">Sq Yards</option>
+                              <option value="3">Acres</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div data-click="single" class="form-group">
+                  <label for="">Bedrooms <span class="required">*</span></label>
+                  <div class="carousel">
+                     <div class="inner-group small">
+                        <ul id="bedroom" class="tabs">
+                           <li>
+                              <a href="#bhk-1"><i class="sul-bhk-1"></i>
+                              1 BHK</a>
+                           </li>
+                           <li>
+                              <a href="#bhk-2"><i class="sul-bhk-2"></i>
+                              2 BHK</a>
+                           </li>
+                           <li >
+                              <a href="#bhk-3"><i class="sul-bhk-3"></i>
+                              3 BHK</a>
+                           </li>
+                           <li>
+                              <a href="#bhk-4"><i class="sul-bhk-4"></i>
+                              4 BHK</a>
+                           </li>
+                           <li>
+                              <a href="#bhk-4plus"><i class="sul-bhk-4plus"></i>
+                              4+ BHK</a>
+                           </li>
+                           <li>
+                              <a href="#rk-1"><i class="sul-home rk"></i>
+                              1 RK</a>
+                           </li>
+                           <li>
+                              <a href="#rk-2"><i class="sul-home rk"></i>
+                              2 RK</a>
+                           </li>
+                           <li>
+                              <a href="#hall-1"><i class="sul-bhk-4plus"></i>
+                              1 HALL</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- 1BHK -->
+               <div id="bhk-1" class="toggle-group hide">
+                  <div class="button-click">
+                     <a href="#" data-view="more"><i class="sul-plus"></i> Add</a> <span>Bedroom Dimensions</span>
+                  </div>
+                  <div  data-expand="expand" class="form-group">
+                     <div class="split-wrap">
+                        <h6>Bedroom 1 <span>(Feet)</span></h6>
+                        <div class="form-group">      
+                           <input class="inputMaterial" type="text" required>
+                           <span class="highlight"></span>
+                           <span class="bar"></span>
+                           <label class="animate">Length</label>
+                        </div>
+                        <div class="form-group last">      
+                           <input class="inputMaterial" type="text" required>
+                           <span class="highlight"></span>
+                           <span class="bar"></span>
+                           <label class="animate">Breadth</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- 2BHK -->
+               <div id="bhk-2" class="toggle-group">
+                  <div class="button-click">
+                     <a href="#" data-view="more"><i class="sul-plus"></i> Add</a> <span>Bedroom Dimensions</span>
+                  </div>
+                  <div  data-expand="expand" class="form-group">
+                     <div class="two-col">
+                        <div class="split-wrap">
+                           <h6>Bedroom 1 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="two-col last">
+                        <div class="split-wrap">
+                           <h6>Bedroom 2 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- 3BHK -->
+               <div id="bhk-3" class="toggle-group">
+                  <div class="button-click">
+                     <a href="#" data-view="more"><i class="sul-plus"></i> Add</a> <span>Bedroom Dimensions</span>
+                  </div>
+                  <div  data-expand="expand" class="form-group">
+                     <div class="two-col">
+                        <div class="split-wrap">
+                           <h6>Bedroom 1 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="two-col last">
+                        <div class="split-wrap">
+                           <h6>Bedroom 2 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="split-wrap">
+                        <h6>Bedroom 3 <span>(Feet)</span></h6>
+                        <div class="form-group">      
+                           <input class="inputMaterial" type="text" required>
+                           <span class="highlight"></span>
+                           <span class="bar"></span>
+                           <label class="animate">Length</label>
+                        </div>
+                        <div class="form-group last">      
+                           <input class="inputMaterial" type="text" required>
+                           <span class="highlight"></span>
+                           <span class="bar"></span>
+                           <label class="animate">Breadth</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- 4BHK -->
+               <div id="bhk-4" class="toggle-group">
+                  <div class="button-click">
+                     <a href="#" data-view="more"><i class="sul-plus"></i> Add</a> <span>Bedroom Dimensions</span>
+                  </div>
+                  <div  data-expand="expand" class="form-group">
+                     <div class="two-col">
+                        <div class="split-wrap">
+                           <h6>Bedroom 1 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="two-col last">
+                        <div class="split-wrap">
+                           <h6>Bedroom 2 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="two-col">
+                        <div class="split-wrap">
+                           <h6>Bedroom 3 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="two-col last">
+                        <div class="split-wrap">
+                           <h6>Bedroom 4 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- 4BHK PLUS-->
+               <div id="bhk-4plus" class="toggle-group">
+                  <div class="button-click">
+                     <a href="#" data-view="more"><i class="sul-plus"></i> Add</a> <span>Bedroom Dimensions</span>
+                  </div>
+                  <div  data-expand="expand" class="form-group">
+                     <div class="two-col">
+                        <div class="split-wrap">
+                           <h6>Bedroom 1 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="two-col last">
+                        <div class="split-wrap">
+                           <h6>Bedroom 2 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="two-col">
+                        <div class="split-wrap">
+                           <h6>Bedroom 3 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="two-col last">
+                        <div class="split-wrap">
+                           <h6>Bedroom 4 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- 1RK -->
+               <div id="rk-1" class="toggle-group">
+                  <div class="button-click">
+                     <a href="#" data-view="more"><i class="sul-plus"></i> Add</a> <span>RK Dimensions</span>
+                  </div>
+                  <div  data-expand="expand" class="form-group">
+                     <div class="split-wrap">
+                        <h6>RK 1 <span>(Feet)</span></h6>
+                        <div class="form-group">      
+                           <input class="inputMaterial" type="text" required>
+                           <span class="highlight"></span>
+                           <span class="bar"></span>
+                           <label class="animate">Length</label>
+                        </div>
+                        <div class="form-group last">      
+                           <input class="inputMaterial" type="text" required>
+                           <span class="highlight"></span>
+                           <span class="bar"></span>
+                           <label class="animate">Breadth</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- 2RK -->
+               <div id="rk-2" class="toggle-group">
+                  <div class="button-click">
+                     <a href="#" data-view="more"><i class="sul-plus"></i> Add</a> <span>RK Dimensions</span>
+                  </div>
+                  <div  data-expand="expand" class="form-group">
+                     <div class="two-col">
+                        <div class="split-wrap">
+                           <h6>RK 1 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="two-col last">
+                        <div class="split-wrap">
+                           <h6>RK 2 <span>(Feet)</span></h6>
+                           <div class="form-group">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Length</label>
+                           </div>
+                           <div class="form-group last">      
+                              <input class="inputMaterial" type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label class="animate">Breadth</label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--1 HALL -->
+               <div id="hall-1" class="toggle-group">
+                  <div class="button-click">
+                     <a href="#" data-view="more"><i class="sul-plus"></i> Add</a> <span>HALL Dimensions</span>
+                  </div>
+                  <div  data-expand="expand" class="form-group">
+                     <div class="split-wrap">
+                        <h6>HALL 1 <span>(Feet)</span></h6>
+                        <div class="form-group">      
+                           <input class="inputMaterial" type="text" required>
+                           <span class="highlight"></span>
+                           <span class="bar"></span>
+                           <label class="animate">Length</label>
+                        </div>
+                        <div class="form-group last">      
+                           <input class="inputMaterial" type="text" required>
+                           <span class="highlight"></span>
+                           <span class="bar"></span>
+                           <label class="animate">Breadth</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div data-click="single" class="form-group">
+                  <label for="">Bathrooms <span class="required">*</span></label>
+                  <div class="inner-group small">
+                     <ul id="bathroom">
+                        <li class="select">1 </li>
+                        <li>2 </li>
+                        <li>3 </li>
+                        <li>4 </li>
+                        <li>4+</li>
+                     </ul>
+                  </div>
+               </div>
+               <div data-click="single" class="form-group">
+                  <label for="">Balconies</label>
+                  <div class="inner-group small">
+                     <ul id="bathroom">
+                        <li class="select">0</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>3+</li>
+                     </ul>
+                  </div>
+               </div>
+               
+               <div class="form-group">
+                  <label for="">Other rooms</label>
+                  <div class="carousel">
+                     <div data-click="multiple" class="inner-group small multiple">
+                        <ul>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-pooja-room"></i>
+                              <p>Pooja Room</p>
+                           </li>
+                           <li class="select">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-study-room"></i>
+                              <p>Study Room</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-servant-room"></i>
+                              <p>Servant Room</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-patio"></i>
+                              <p>Patio</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-garden"></i>
+                              <p>In house Garden</p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               
+               
+               
+               <div data-click="single" class="form-group furnished">
+                  <label for="">Furnishing Type <span class="required">*</span></label>
+                  <div class="inner-group small">
+                     <ul id="fur-nished" class="tabs">
+                        <li ><a href="#furnished"> Fully Furnished</a></li>
+                        <li>
+                           <p><a href="#semi-furnished">Semi-Furnished</a></p>
+                        </li>
+                        <li class="select"><a href="#unfurnished">Unfurnished</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="furnished" class="toggle-group">
+                  <p>Furnishing Info</p>
+                  <div class="carousel">
+                     <div data-click="multiple" class="inner-group small multiple">
+                        <ul>
+                           <li class="select">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-wardrobe"></i>
+                              Geysers
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-ac"></i>
+                              AC
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-fan"></i>
+                              Fans
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-mod-kitchen"></i>
+                              Tubelights
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-mod-kitchen"></i>
+                              Chimney 
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-wardrobe"></i>
+                              Modular Kitchen
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-mod-kitchen"></i>
+                              Wardrobes
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-mod-kitchen"></i>
+                              Dinning Table  
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-mod-kitchen"></i>
+                              Sofa
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-tv"></i>
+                              TV
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-wardrobe"></i>
+                              Bed &amp; Mattress
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-mod-kitchen"></i>
+                              Gas Stove
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-mod-kitchen"></i>
+                              RO Water Purifier 
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-mod-kitchen"></i>
+                              Microoven
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div id="semi-furnished" class="toggle-group">
+                  <p>Furnishing Info</p>
+                  <div class="carousel">
+                     <div data-click="multiple" class="inner-group small multiple">
+                        <ul>
+                           <li class="select">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-wardrobe"></i>
+                              Geysers
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-ac"></i>
+                              AC
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-fan"></i>
+                              Fans
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-mod-kitchen"></i>
+                              Tubelights
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-mod-kitchen"></i>
+                              Chimney
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-mod-kitchen"></i>
+                              Modular Kitchen
+                           </li>
+                           <li class="">
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-mod-kitchen"></i>
+                              Wardrobes
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label for="">Floor no <span class="required">*</span></label>
+                  <div class="carousel">
+                     <div data-click="single" class="rounded">
+                        <ul>
+                           <li><span>G</span>						
+                           </li>
+                           <li class="select">
+                              <span>1</span>
+                           </li>
+                           <li>
+                              <span>2</span>
+                           </li>
+                           <li>
+                              <span>3</span>
+                           </li>
+                           <li>
+                              <span>4</span>
+                           </li>
+                           <li>
+                              <span>5</span>
+                           </li>
+                           <li><span>6</span>						
+                           </li>
+                           <li>
+                              <span>7</span>
+                           </li>
+                           <li>
+                              <span>8</span>
+                           </li>
+                           <li>
+                              <span>9</span>
+                           </li>
+                           <li>
+                              <span>10</span>
+                           </li>
+                           <li><span>11</span></li>
+                           <li><span>12</span></li>
+                           <li><span>13</span></li>
+                           <li><span>14</span></li>
+                           <li><span>15</span></li>
+                           <li><span>16</span></li>
+                           <li><span>17</span></li>
+                           <li><span>18</span></li>
+                           <li><span>19</span></li>
+                           <li><span>20</span></li>
+                           <li><span>21</span></li>
+                           <li><span>22</span></li>
+                           <li><span>23</span></li>
+                           <li><span>24</span></li>
+                           <li><span>25</span></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label for="">Total Floors <span class="required">*</span></label>
+                  <div class="carousel">
+                     <div data-click="single" class="rounded">
+                        <ul>
+                           <li class="select">
+                              <span>1</span>
+                           </li>
+                           <li>
+                              <span>2</span>
+                           </li>
+                           <li>
+                              <span>3</span>
+                           </li>
+                           <li>
+                              <span>4</span>
+                           </li>
+                           <li>
+                              <span>5</span>
+                           </li>
+                           <li><span>6</span>						
+                           </li>
+                           <li>
+                              <span>7</span>
+                           </li>
+                           <li>
+                              <span>8</span>
+                           </li>
+                           <li>
+                              <span>9</span>
+                           </li>
+                           <li>
+                              <span>10</span>
+                           </li>
+                           <li>
+                              <span>11</span>
+                           </li>
+                           <li>
+                              <span>12</span>
+                           </li>
+                           <li>
+                              <span>13</span>
+                           </li>
+                           <li><span>14</span></li>
+                           <li><span>15</span></li>
+                           <li><span>16</span></li>
+                           <li><span>17</span></li>
+                           <li><span>18</span></li>
+                           <li><span>19</span></li>
+                           <li><span>20</span></li>
+                           <li><span>21</span></li>
+                           <li><span>22</span></li>
+                           <li><span>23</span></li>
+                           <li><span>24</span></li>
+                           <li><span>25</span></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div data-click="single" class="form-group">
+                  <label for="">Flooring info</label>
+                  <div class="inner-group small">
+                     <ul id="fur-nished">
+                        <li>Vitrified Tiles</li>
+                        <li>Mosaic</li>
+                        <li>Marble</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <h5>Car Parking</h5>
+                  <div class="split-wrap operators">
+                     <div class="form-group"> 
+                        <input type='button' value='-' class="sul-minus" field='carquantity' />
+                        <input class="inputMaterial" value="0" name='carquantity' type="text" required>
+                        <input type='button' value='+' class="sul-plus" field='carquantity' />
+                     </div>
+                     <div class="form-group last val-hide">
+                        <div data-click="single" class="form-table">
+                           <ul class="two-up">
+                              <li><span class="sul-car-c"></span>Covered</li>
+                              <li class="select"><span class="sul-car"></span>Open</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <h5>Two Wheeler Parking</h5>
+                  <div class="split-wrap operators">
+                     <div class="form-group"> 
+                        <input type='button' value='-' class="sul-minus" field='bikequantity' />
+                        <input class="inputMaterial" value="0" name='bikequantity' type="text" required>
+                        <input type='button' value='+' class="sul-plus" field='bikequantity' />
+                     </div>
+                     <div class="form-group last val-hide">
+                        <div data-click="single" class="form-table">
+                           <ul class="two-up">
+                              <li><span class="sul-bike-c"></span>Covered</li>
+                              <li class="select"><span class="sul-bike"></span>Open</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label for="">Direction Facing</label>
+                  <div data-click="single" class="form-table">
+                     <ul class="four-up">
+                        <li>East</li>
+                        <li>West</li>
+                        <li>North</li>
+                        <li>South</li>
+                     </ul>
+                  </div>
+               </div>
+               <h5>Available In <span class="required">*</span></h5>
+               <div data-click="single" class="toolbar">
+                  <ul class="toolbar-inner">
+                     <li class="select">Immediate</li>
+                     <li>1-2 Weeks</li>
+                     <li>1 Month</li>
+                     <li><span class="sul-chev-r"></span>1 Month</li>
+                  </ul>
+               </div>
+               <div class="form-group">
+                  <label for="">Age of construction</label>
+                  <div class="carousel">
+                     <div data-click="single" class="form-table">
+                        <ul class="list">
+                           <li>New</li>
+                           <li><i class="sul-chev-l"></i> 1 year</li>
+                           <li>1-3 years</li>
+                           <li>3-5 years</li>
+                           <li>5-10 years</li>
+                           <li><i class="sul-chev-r"></i> 10 years</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <h4>Amenities</h4>
+               <div class="form-group">
+                  <div data-click="multiple" class="inner-group multiple">
+                     <ul class="gallery three-col amenities">
+                        <li>
+                           <span class="sul-tick-l"></span>
+                           <i class="sul-power-backup"></i>
+                           <p>24*7 Power Back up</p>
+                        </li>
+                        <li>
+                           <span class="sul-tick-l"></span>
+                           <i class="sul-club-house"></i>
+                           <p>Club House</p>
+                        </li>
+                        <li>
+                           <span class="sul-tick-l"></span>
+                           <i class="sul-gym"></i>
+                           <p>Gym</p>
+                        </li>
+                        <li>
+                           <span class="sul-tick-l"></span>
+                           <i class="sul-water"></i>
+                           <p>Corporation Water</p>
+                        </li>
+                        <li>
+                           <span class="sul-tick-l"></span>
+                           <i class="sul-swim-pool"></i>
+                           <p>Swimming Pool</p>
+                        </li>
+                        <li>
+                           <span class="sul-tick-l"></span>
+                           <i class="sul-walking-track"></i>
+                           <p>Jogging Track</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="toggle-group">
+                  <div class="button-click">
+                     <a href="#" data-view="more"><i class="sul-plus"></i> Add </a><span> more amenities</span>
+                  </div>
+                  <div class="carousel">
+                     <div data-click="multiple" data-expand="expand" class="inner-group small multiple">
+                        <ul class="gallery three-col amenities">
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-park"></i>
+                              <p>Park</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-atm"></i>
+                              <p>ATM</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-visit"></i>
+                              <p>Visitors Parking</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-security"></i>
+                              <p>Security</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-super-market"></i>
+                              <p>Shopping Complex</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-pipped-gas"></i>
+                              <p>Piped Gas </p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-intercom"></i>
+                              <p>Intercomm Facility</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-tennis"></i>
+                              <p>Tennis Court</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-shuttlecock"></i>
+                              <p>Badminton Court</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-play-ground"></i>
+                              <p>Playground</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-yoga"></i>
+                              <p>Yoga Room</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-medical-serv"></i>
+                              <p>Medical Center</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-surveilance"></i>
+                              <p>CCTV Monitored</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-vastu"></i>
+                              <p>Feng Shui / Vastu Compliant</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-party-hall"></i>
+                              <p>Party Hall</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-lift"></i>
+                              <p>Lifts</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-lift"></i>
+                              <p>Service Lifts</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-servant-room"></i>
+                              <p>Maintenance Staff</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-short-list"></i>
+                              <p>Broadband Connectivity</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-rwater-har"></i>
+                              <p>Rain Water Harvesting</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-s-treatment"></i>
+                              <p>Sewage treatment plant</p>
+                           </li>
+                           <li>
+                              <span class="sul-tick-l"></span>
+                              <i class="sul-fire-safety"></i>
+                              <p>Fire Safety</p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <h4>Property Rent</h4>
+               <div class="form-group nomargin">
+                  <div class="split-wrap">
+                     <div class="form-group">      
+                        <input class="inputMaterial" type="number" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="animate">Expected Rent <span class="required">*</span></label>
+                     </div>
+                     <div class="form-group last">
+                        <div class="checkmark-right">
+                           <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+                           <label for="checkbox-1" class="checkbox-custom-label">Negotiable</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="rent-group">
+                  <p>Rentals Trends : <span><i class="sul-arrow-u"></i>40% of properties in your locality are above the quoted price</span></p>
+               </div>
+               <div class="form-group">
+                  <div class="split-wrap">
+                     <div class="form-group">      
+                        <input class="inputMaterial" type="number" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="animate">Deposit Amount <span class="required">*</span></label>
+                     </div>
+                     <div class="form-group last">      
+                        <input class="inputMaterial" type="number" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="animate">Monthly Maintenance</label>
+                     </div>
+                  </div>
+               </div>
+               <h4>Photos</h4>
+               <p class="photos">Ads with Photos have 2 times better visibility than Ads without photos</p>
+               <div class="form-group">
+                  <div class="upload">
+                     <span class="button fileUpload">
+                     <span><span class="sul-camera"></span>Click to Upload</span>
+                     <input type="file" capture="camera" class="upload" multiple name="files[]" id="fileupload" accept="image/*">
+                     </span>
+                  </div>
+                  <div class="schedule">
+                     <div class="or-line">
+                        <ul>
+                           <li>or</li>
+                        </ul>
+                     </div>
+                     <h5>Schedule photoshoot appointment</h5>
+                     <div class="form-group">
+                        <input class="inputMaterial" placeholder="Date" type="date" required>
+                        <i class="sul-calender"></i>
+                     </div>
+                     <div class="form-group">
+                        <label>Time </label>				
+                        <div class="split-wrap operators appointments">
+                           <div class="form-group">
+                              <select class="browser-default">
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                                 <option value="6">6</option>
+                                 <option value="7">7</option>
+                                 <option value="8">8</option>
+                                 <option value="9">9</option>
+                                 <option value="10">10</option>
+                                 <option value="11">11</option>
+                                 <option value="12">12</option>
+                              </select>
+                           </div>
+                           <div class="form-group">
+                              <select class="browser-default">
+                                 <option value="1">00</option>
+                                 <option value="2">15</option>
+                                 <option value="3">30</option>
+                                 <option value="4">45</option>
+                              </select>
+                           </div>
+                           <div class="form-group last time">
+                              <div data-click="single" class="form-table">
+                                 <ul class="two-up">
+                                    <li class="select">AM</li>
+                                    <li>PM</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                                   <ul id="preview" class="gallery"></ul>
+               </div>
+               <h4>Preferences</h4>
+               <div class="form-group">
+                  <label for="">Food Habits</label>
+                  <div data-click="single" class="inner-group">
+                     <ul class="gallery three-col">
+                        <li>
+                           <i class="sul-veg"></i>
+                           <p>Vegetarian</p>
+                        </li>
+                        <li class="select">
+                           <i class="sul-multiple"></i>
+                           <p>No Preferences</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label for="">Tenant</label>
+                  <div data-click="single" class="inner-group">
+                     <ul class="gallery three-col">
+                        <li>
+                           <i class="sul-family"></i>
+                           <p>Family</p>
+                        </li>
+                        <li>
+                           <i class="sul-bachelor"></i>
+                           <p>Bachelors</p>
+                        </li>
+                        <li class="select">
+                           <i class="sul-multiple"></i>
+                           <p>No Preferences</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <h5>Preferred Contact Time</h5>
+                  <div class="checkmark-right">
+                     <input id="checkbox-2" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+                     <label for="checkbox-2" class="checkbox-custom-label">Any time</label>
+                  </div>
+                  <div class="from-to-time hide">
+                     <div class="split-wrap operators">
+                        <div class="form-group">
+                           <label>From </label>
+                           <select class="browser-default">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                           </select>
+                        </div>
+                        <div class="form-group last time">
+                           <div data-click="single" class="form-table">
+                              <ul class="two-up">
+                                 <li class="select">AM</li>
+                                 <li>PM</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="split-wrap operators">
+                        <div class="form-group">
+                           <label>To </label>
+                           <select class="browser-default">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                           </select>
+                        </div>
+                        <div class="form-group last time">
+                           <div data-click="single" class="form-table">
+                              <ul class="two-up">
+                                 <li class="select">AM</li>
+                                 <li>PM</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group brokerresp">
+                  <label for="">Get Response from broker</label>
+                  <div class="switch off">
+                     <div class="toggle"></div>
+                     <span class="on">Yes</span>
+                     <span class="off">No</span>
+                  </div>
+                  <p class="warning-msg">Brokers help you in renting your property faster</p>
+               </div>
+               <div class="form-group">
+                  <label for="">Property Description <span class="required">*</span></label>
+                  <textarea name="" id=""></textarea>
+               </div>
+               <a href="post-ad-thanks.html" class="btn primary btn-block">Submit</a>
+            </form>
+         </main>
+         <div class="s1-footer">
+            <div class="footer-bottom">
+               <span>© 2016 Copyright Sulekha. All Rights Reserved.</span>
+               <div class="social-icons"> <a class="ftr-ic-twitter" title="Follow us on Twitter" href="http://twitter.com/sulekhadotcom" rev="FTB|SOC|TWT" target="_blank"></a> <a class="ftr-ic-facebook" title="Be a fan on Facebook" href="http://www.facebook.com/Sulekhadotcom" rev="FTB|SOC|FB" target="_blank"></a> <a class="ftr-ic-pinterest" title="Pinterest" href="http://www.pinterest.com/sulekhadotcom/" rev="FTB|SOC|PIN" target="_blank"></a> <a class="ftr-ic-google-plus" title="Google Plus" href="https://plus.google.com/+sulekha" rev="FTB|SOC|GP" target="_blank"></a> </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/SPGooglemapV1.js" async defer></script>
+      <!--<script src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initialize" async defer></script>-->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZCaTIWcKxVy-96fdvtCmvfMuJsbcFj3o&libraries=places&callback=initialize" async defer></script>  
+      <script src="js/SPImageUploadV1.js" async defer></script>
+   </body>
+</html>cript>
+</body>
+</html>
